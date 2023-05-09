@@ -2,8 +2,15 @@
 
 
 
+
+ 
+
+
+
+
+
 <h2>New book</h2>
-<%= form_with model: @book.new do |f| %>
+<%= form_with model: @book do |f| %>
 
   <div class="field">
     <label>Title</label>
@@ -15,7 +22,7 @@
     <%= f.text_field :body %>
   </div>
   
-  <div class="actions">
+  <div>
     <%= f.submit 'Create Book' %>
   </div>
 <% end %>
